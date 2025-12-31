@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#121212] text-zinc-300 min-h-screen flex items-center justify-center p-4 md:p-8 lg:p-12 antialiased selection:bg-amber-500/30 selection:text-amber-200">
+
+    <div class="max-w-[1250px] w-full flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
+        
+        <!-- Left Sidebar / Profile Card -->
+        <aside class="w-full lg:w-[320px] shrink-0 bg-[#1e1e1f] rounded-[2rem] border border-white/5 p-8 flex flex-col items-center shadow-2xl relative overflow-hidden">
+            <!-- Avatar -->
+            <div class="relative w-36 h-36 mb-6 bg-zinc-800 rounded-[2rem] overflow-hidden shadow-inner ring-1 ring-white/10">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop" alt="Profile" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500">
+            </div>
+
+            <!-- Name & Role -->
+            <h1 class="text-[1.75rem] font-semibold text-white tracking-tight mb-2">Rohit Negi</h1>
+            <div class="bg-zinc-800/80 px-4 py-1.5 rounded-lg border border-white/5">
+                <span class="text-xs font-medium text-amber-500 uppercase tracking-wide">Frontend Developer</span>
+            </div>
+
+            <!-- Divider -->
+            <div class="w-full h-px bg-zinc-800 my-8"></div>
+
+            <!-- Contact Info -->
+            <div class="w-full space-y-6">
+                <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-3 mb-1 group">
+                        <div class="p-2 rounded-lg bg-zinc-800/50 text-amber-500 group-hover:bg-zinc-800 group-hover:text-amber-400 transition-colors">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                        </div>
+                        <span class="text-xs font-medium text-zinc-500 uppercase tracking-wider">Email</span>
+                    </div>
+                    <p class="text-sm font-medium text-zinc-200 pl-[3.25rem]">rohit@gmail.com</p>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-3 mb-1 group">
+                        <div class="p-2 rounded-lg bg-zinc-800/50 text-amber-500 group-hover:bg-zinc-800 group-hover:text-amber-400 transition-colors">
+                            <i data-lucide="smartphone" class="w-4 h-4"></i>
+                        </div>
+                        <span class="text-xs font-medium text-zinc-500 uppercase tracking-wider">Phone</span>
+                    </div>
+                    <p class="text-sm font-medium text-zinc-200 pl-[3.25rem]">8885664702</p>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-3 mb-1 group">
+                        <div class="p-2 rounded-lg bg-zinc-800/50 text-amber-500 group-hover:bg-zinc-800 group-hover:text-amber-400 transition-colors">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                        </div>
+                        <span class="text-xs font-medium text-zinc-500 uppercase tracking-wider">Location</span>
+                    </div>
+                    <p class="text-sm font-medium text-zinc-200 pl-[3.25rem]">Dwarka, Delhi</p>
+                </div>
+            </div>
+
+            <!-- Socials -->
+            <div class="mt-8 flex gap-4">
+                <a href="#" class="text-zinc-500 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="text-zinc-500 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg">
+                    <i data-lucide="twitter" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="text-zinc-500 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 w-full bg-[#1e1e1f] rounded-[2rem] border border-white/5 p-6 md:p-10 lg:p-12 shadow-2xl min-h-[800px] relative">
+            
+            <!-- Navigation -->
+            <header class="absolute top-0 right-0 p-8 hidden md:block">
+                <nav class="flex gap-8 text-sm font-medium">
+                    <a href="#" class="text-amber-500 border-b border-transparent">About</a>
+                    <a href="#" class="text-zinc-400 hover:text-white transition-colors">Skills</a>
+                    <a href="#" class="text-zinc-400 hover:text-white transition-colors">Education</a>
+                    <a href="#" class="text-zinc-400 hover:text-white transition-colors">Portfolio</a>
+                </nav>
+            </header>
+
+            <!-- Content Container -->
+            <div class="mt-4 md:mt-6">
+                
+                <!-- About Section -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-semibold text-white mb-2 tracking-tight">About Me</h2>
+                    <div class="w-10 h-1.5 bg-amber-500 rounded-full mb-8"></div>
+                    
+                    <div class="text-zinc-400 text-base leading-7 space-y-4 max-w-3xl">
+                        <p>
+                            I am a creative and passionate Frontend Developer with a keen eye for detail and a love for building beautiful, functional, and user-friendly web experiences. My journey in web development is driven by a desire to turn complex problems into simple, elegant solutions.
+                        </p>
+                        <p>
+                            I specialize in modern web technologies and am always eager to learn and adapt to the ever-evolving digital landscape.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section>
+                    <h2 class="text-3xl font-semibold text-white mb-2 tracking-tight">My Skills</h2>
+                    <div class="w-10 h-1.5 bg-amber-500 rounded-full mb-8"></div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                        <!-- HTML5 -->
+                        <div class="bg-zinc-800/40 border border-white/5 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-zinc-800/60 hover:scale-[1.02] hover:border-amber-500/20 transition-all duration-300 cursor-default group">
+                            <div class="w-10 h-10 mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full text-orange-500 fill-orange-500/10"><path d="M2 3h20l-2 18-8 3-8-3Z"/><path d="M12 19V7l-5.5 1.5"/></svg>
+                            </div>
+                            <span class="text-sm font-medium text-zinc-300 group-hover:text-white">HTML5</span>
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="bg-zinc-800/40 border border-white/5 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-zinc-800/60 hover:scale-[1.02] hover:border-blue-500/20 transition-all duration-300 cursor-default group">
+                            <div class="w-10 h-10 mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full text-blue-500 fill-blue-500/10"><path d="m20.5 4-2 16.5L12 23l-6.5-2.5L3.5 4z"/><path d="M8.5 8h7L15 16l-3 1-3-1-.75-4"/></svg>
+                            </div>
+                            <span class="text-sm font-medium text-zinc-300 group-hover:text-white">CSS3</span>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="bg-zinc-800/40 border border-white/5 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-zinc-800/60 hover:scale-[1.02] hover:border-yellow-400/20 transition-all duration-300 cursor-default group">
+                            <div class="w-10 h-10 mb-1 flex items-center justify-center bg-yellow-400 rounded text-black font-bold text-xl">
+                                JS
+                            </div>
+                            <span class="text-sm font-medium text-zinc-300 group-hover:text-white">JavaScript</span>
+                        </div>
+
+                        <!-- React -->
+                        <div class="bg-zinc-800/40 border border-white/5 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-zinc-800/60 hover:scale-[1.02] hover:border-cyan-400/20 transition-all duration-300 cursor-default group">
+                            <div class="w-10 h-10 mb-1 animate-spin-slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full text-cyan-400"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+                            </div>
+                            <span class="text-sm font-medium text-zinc-300 group-hover:text-white">React</span>
+                        </div>
+
+                        <!-- Git & Github -->
+                        <div class="bg-zinc-800/40 border border-white/5 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-zinc-800/60 hover:scale-[1.02] hover:border-amber-500/20 transition-all duration-300 cursor-default group">
+                            <div class="w-10 h-10 mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full text-orange-400"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                            </div>
+                            <span class="text-sm font-medium text-zinc-300 group-hover:text-white">Git & Github</span>
+                        </div>
+
+                        <!-- Typescript -->
+                        <div class="bg-zinc-800/40 border border-white/5 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-zinc-800/60 hover:scale-[1.02] hover:border-blue-500/20 transition-all duration-300 cursor-default group">
+                             <div class="w-10 h-10 mb-1 flex items-center justify-center bg-blue-600 rounded text-white font-bold text-xl">
+                                TS
+                            </div>
+                            <span class="text-sm font-medium text-zinc-300 group-hover:text-white">Typescript</span>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Education Preview (To match image hint) -->
+                <section class="mt-12 opacity-50">
+                    <h2 class="text-3xl font-semibold text-white mb-2 tracking-tight">Education</h2>
+                    <div class="w-10 h-1.5 bg-amber-500 rounded-full mb-8"></div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
